@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería | Sharabbe Eventos y Más</title>
+<meta name="description" content="Galería de eventos realizados por Sharabbe Eventos y Más: montajes de carpas, ceremonias, decoraciones y banquetes en Santo Domingo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="img/logo-sharabbe.jpg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a class="brand" href="index.html">
+    <img class="brand-logo" src="img/logo-sharabbe.jpg" alt="Sharabbe Eventos y Más">
+    <div class="brand-name">Sharabbe <span>Eventos y Más</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="galeria.html" class="active">Galería</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
+  <a class="nav-cta" href="https://wa.me/18097960239" target="_blank" rel="noopener">WhatsApp</a>
+</nav>
+
+<header class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Eventos realizados</span>
+    <h1>Galería</h1>
+    <p>Un vistazo a montajes que hemos hecho realidad: ceremonias, graduaciones, banquetes y celebraciones de todo tipo.</p>
+    <div class="crumbs"><a href="index.html">Inicio</a> &nbsp;/&nbsp; Galería</div>
+  </div>
+</header>
+
+<section class="section reveal">
+  <div class="wrap">
+    <span class="eyebrow c-sage">Nuestro trabajo</span>
+    <h2>Momentos que hemos creado</h2>
+    <div class="gallery-grid">
+
+      <div class="gallery-item tall" onclick="openLightbox('img/galeria-2.jpeg')">
+        <img src="img/galeria-2.jpeg" alt="Montaje de tensoestructura para evento">
+        <div class="gallery-cap"><span>Montaje de carpa</span>Tensoestructura para evento al aire libre</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('img/galeria-1.jpeg')">
+        <img src="img/galeria-1.jpeg" alt="Ceremonia con sillas blancas">
+        <div class="gallery-cap"><span>Ceremonia</span>Sillas blancas y tarima bajo carpa</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('img/decoraciones.jpeg')">
+        <img src="img/decoraciones.jpeg" alt="Decoración de graduación">
+        <div class="gallery-cap"><span>Graduación</span>Arco de globos y backdrop dorado</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('img/fiesta.jpeg')">
+        <img src="img/fiesta.jpeg" alt="Mesa de banquete">
+        <div class="gallery-cap"><span>Banquete</span>Montaje de mesas con manteles y vajilla</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('img/manteles.jpeg')">
+        <img src="img/manteles.jpeg" alt="Mesa vestida con manteles">
+        <div class="gallery-cap"><span>Textiles</span>Mesa redonda con mantel y cubremantel</div>
+      </div>
+      <div class="gallery-item tall" onclick="openLightbox('img/sillas.jpeg')">
+        <img src="img/sillas.jpeg" alt="Sillas listas para montaje">
+        <div class="gallery-cap"><span>Mobiliario</span>Sillas listas para tu próximo evento</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('img/mesas.jpeg')">
+        <img src="img/mesas.jpeg" alt="Mesas redondas">
+        <div class="gallery-cap"><span>Mobiliario</span>Mesas redondas plegables</div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('img/buffet.jpeg')">
+        <img src="img/buffet.jpeg" alt="Menú de buffet">
+        <div class="gallery-cap"><span>Catering</span>Opciones de menú buffet</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" style="background:var(--bg-2);text-align:center;">
+  <div class="wrap">
+    <span class="eyebrow c-terracotta" style="justify-content:center;">¿Te gusta lo que ves?</span>
+    <h2 style="margin-bottom:30px;">Hagamos realidad tu próximo evento</h2>
+    <a class="btn btn-gold" href="contacto.html">Solicitar cotización</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="foot-brand">
+        <img class="foot-logo" src="img/logo-sharabbe.jpg" alt="Sharabbe Eventos y Más">
+        <div class="brand-name">Sharabbe <span style="color:var(--gold);">Eventos y Más</span></div>
+      </div>
+      <div class="foot-links">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Sharabbe Eventos y Más SRL — Hacemos tu evento una realidad.</div>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" onclick="closeLightbox()">×</div>
+  <img id="lightbox-img" src="" alt="Vista ampliada">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
